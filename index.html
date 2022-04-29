@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!--  -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Mads">
+    <title>Miniproject Web Development</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function(){
+                $("#test").load("data,txt", {Name: "Daniel", Lastname: "Nielsen"
+                }, function() {
+                    alert("Hi there!");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body> <!-- All the content -->
+
+    <header>
+        <h2>My Miniproject</h2>
+        <h4>by Mads Pedersen</h4>
+    </header>
+
+    <div class="container">
+        <aside>
+
+            <ul class="save_list">
+                <li> <button class="save button">Save</button></li>
+                <li> <button class="save button">Save</button> </li>
+            </ul>
+
+        </aside>
+
+        <section>
+            <h3>Information</h3>
+            <p>This is an attempt at creating a
+                webpage by myself. I tried to make
+                it so that you can change the images
+                and then save it. You can read more
+                about what my webpage does in the
+                rapport.
+            </p>
+        </section>
+    </div>
+
+    <div class="carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+            <img class="img_butt" src="img/left.svg" alt="">
+        </button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current-slide">
+                    <img class="carousel_image" src="img/slide-1.png" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="img/slide-2.jpg" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="img/slide-3.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <button class="carousel_button carousel_button--right" alt="">
+            <img class="img_butt" src="img/right.svg" alt="">
+        </button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+
+    <div id="test">
+        <p> this is the first content</p>
+    </div>
+    <button id="btn"> click to change</button>
+
+
+
+<!--
+    <div>
+        <p class="intro"> Costumize </p>
+    </div>
+
+    <div class="repeatingbg">
+        <p><span class="highlight">
+            shalgdfsea
+        </span>
+
+        </p>
+    </div>
+
+    <img src="img/Maria.png" alt="Body">
+
+-->
+
+
+    <script src="js/ajax.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--<script src="js/jquery-1.11.0.js"></script>-->
+</body>
+</html>
